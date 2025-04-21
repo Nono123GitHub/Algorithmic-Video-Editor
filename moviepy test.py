@@ -76,7 +76,7 @@ looped_images = (resized_images * ((num_frames // len(resized_images)) + 1))[:nu
 duration = len(image_files) / fps
 clip = ImageSequenceClip(looped_images, fps=fps).with_audio(audio)
 
-output_path = "C:\\Users\\nshei\\Desktop\\youtube code\\ai video editor\\final.mp4"
+output_path = "" # Note to viewers - enter your desired output path here
 print(f"'Writing to {output_path}")
 clip.write_videofile(output_path, audio=True)
 
